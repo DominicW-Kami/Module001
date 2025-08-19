@@ -1,5 +1,6 @@
 aa = input('Anna Nimesi: ')
 print("Tervehdys, " + aa,"!")
+import math
 def laske():
 
     try:
