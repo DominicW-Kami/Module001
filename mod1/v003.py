@@ -1,5 +1,4 @@
-aa = input('Anna Nimesi: ')
-print("Tervehdys, " + aa,"!")
+import math
 def laske():
 
     try:
@@ -12,3 +11,5 @@ def laske():
            print(f"Ympyrän pinta-ala on: {pinta_ala:.2f} kun säde on {sade2:.2f}")
     except ValueError:
            print("Virheellinen syöte.")
+
+
