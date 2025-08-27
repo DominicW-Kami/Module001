@@ -82,32 +82,3 @@ while True:
             break
     else:
             print("Väärä tunnus tai salasana yritä uudelleen!")
-import random
-
-def e_pi(num_p):
-    ympyra_sisa = 0
-    totaali_pisteet = num_p
-
-    for _ in range(totaali_pisteet):
-        x = random.uniform(-1, 1)
-        y = random.uniform(-1, 1)
-
-        if x**2 + y**2 <= 1:
-            ympyra_sisa += 1
-
-    pi_e = 4 * (ympyra_sisa / totaali_pisteet)
-    return pi_e
-if __name__ == "__main__":
-    while True:
-        try:
-            ptg = int(input("Kuinka monta pistettä haluat generoida? : "))
-            if ptg > 0:
-                break
-            else:
-                print("Positiivinen luku kiitos.")
-        except ValueError:
-            print("Luku ei ole numeraallinen vastaus!")
-
-        ed_pi = e_pi(ptg)
-        print(f" {ptg} pisteet, piin on {ed_pi}")
-
