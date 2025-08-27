@@ -102,7 +102,7 @@ def muunna_keskiaika_paino():
         luodit1 = float(luodit_1)
 
         if leiviskat1 < 0 or naulat1 < 0 or luodit1 <0:
-            print("Lukujen pitää olla positiivisia1")
+            print("Lukujen pitää olla positiivisia")
             return
 
         koko_g = (leiviskat1 * leiviska_g +
