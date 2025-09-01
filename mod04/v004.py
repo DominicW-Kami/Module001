@@ -36,6 +36,7 @@ if nmrs:
     isoin = max(nmrs)
     print(f"pienin numero oli: {pienin}")
     print(f"isoin numero oli: {isoin}")
+
 else:
     print("Lukuja ei annettu")
 
