@@ -3,31 +3,20 @@ print("Tervehdys, " + aa,"!")
 import math
 
 def laske_ympyran_pinta_ala():
-
     try:
-
         sade_str = input("Mikä on ympyrän säde? ")
         sade = float(sade_str)
-
-
         if sade < 0:
             print("Säde ei voi olla negatiivinen.")
         else:
-
             pinta_ala = math.pi * (sade ** 2)
-
-
             print(f"Ympyrän pinta-ala on: {pinta_ala:.2f}")
-
     except ValueError:
-
         print("Virheellinen syöte. Ole hyvä ja syötä numero.")
-
 
 laske_ympyran_pinta_ala()
 
 def laske_suorakulmio():
-
     try:
 
         kanta_1 = input ("Mikä on suorakulmion kanta: ")
@@ -36,11 +25,9 @@ def laske_suorakulmio():
         korkeus_1 = input("Mikä on suorakulmion korkeus: ")
         korkeus_2 = float(korkeus_1)
 
-
         if kanta_2 < 0 or korkeus_2 < 0:
             print("Luku ei voi olla negatiivinen.")
         else:
-
             piiri = 3 * (kanta_2 + korkeus_2)
             pinta_ala = kanta_2 * korkeus_2
             print(f"\nSuorakulmion mitat ovat:")
@@ -48,7 +35,6 @@ def laske_suorakulmio():
             print(f"Korkeus: {korkeus_2:.2f}")
             print(f"Piiri: {piiri:.2f}")
             print(f"Pinta-ala: {pinta_ala:.2f}")
-
     except ValueError:
 
         print("Virheellinen syöte.")
@@ -78,13 +64,11 @@ def laske_luku():
         print(f"Lukujen summa: {summa}")
         print(f"Lukujen tulo: {tulo}")
         print(f"Lukujen keskiarvo: {keskiarvo:.2f}")
-
     except ValueError:
         print("Virheellinen syöte")
 laske_luku()
 
 def muunna_keskiaika_paino():
-
     try:
         luoti_g = 13.3
         naula_l = 32
@@ -104,14 +88,11 @@ def muunna_keskiaika_paino():
         if leiviskat1 < 0 or naulat1 < 0 or luodit1 <0:
             print("Lukujen pitää olla positiivisia")
             return
-
         koko_g = (leiviskat1 * leiviska_g +
                   naulat1 * naula_g +
                   luodit1 * luoti_g)
-
         koko_kg = int(koko_g / 1000)
         yli_g = koko_g % 1000
-
         print("\n Muunnostulokset")
         print(f"Syötetty määrä:")
         print(f"  {leiviskat1:.2f} leiviskää")
@@ -119,7 +100,6 @@ def muunna_keskiaika_paino():
         print(f"  {luodit1:.2f} luotia")
         print("\nVastaa kilogrammoina ja grammoina")
         print(f"  {koko_kg} kg ja {yli_g:.2f} g")
-
     except ValueError:
         print("Virheellinen syöte")
 muunna_keskiaika_paino()
@@ -132,7 +112,6 @@ def kolminumero_koodi():
         numero = random.randint(0, 9)
         koodi += str(numero)
     return koodi
-
 arvottu_koodi = kolminumero_koodi()
 print(f"Arvottu kolmenumeroine koodi on: {arvottu_koodi}")
 
@@ -142,6 +121,5 @@ def nelinumero_koodi():
         numero1 = random.randint(1, 6)
         koodi1 += str(numero1)
     return koodi1
-
 arvottu_koodi4 = nelinumero_koodi()
 print(f"Arvottu nelinumeroine koodi on: {arvottu_koodi4}")
