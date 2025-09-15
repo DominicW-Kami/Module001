@@ -1,5 +1,5 @@
 def vuodenajat():
-    vuodenaiai = ("talvi", "talvi", "talvi", "kevät", "kevät", "kevät", "kesä", "kesä", "kesä", "syksy", "syksy", "syksy",)
+    vuodenaiai = ("talvi", "talvi", "kevät", "kevät", "kevät", "kesä", "kesä", "kesä", "syksy", "syksy", "syksy", "talvi",)
     while True:
         try:
             kuukausi = int(input("Anna kuukauden numero (1-12): "))
