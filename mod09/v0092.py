@@ -20,7 +20,7 @@ class Auto:
 
 auto = Auto("", 0, 0, 0)
 auto.registery = input("Registery: ")
-auto.topspeed = input("Topspeed: ")
+auto.topspeed = int(input("Topspeed: "))
 
 while True:
     command = input("Input accelerate or decelerate (or 'quit'): ").lower()
