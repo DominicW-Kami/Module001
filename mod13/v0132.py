@@ -3,8 +3,6 @@ import mysql.connector
 
 app = Flask(__name__)
 
-
-# Database connection
 def get_db_connection():
     connection = mysql.connector.connect(
         port=3306,
@@ -19,15 +17,11 @@ def get_db_connection():
 
 @app.route('/kenttä/<string:icao>', methods=['GET'])
 def get_icao_code(icao):
-    """Palauttaa lentokentän nimen ICAO-koodin perusteella."""
     connection = get_db_connection()
     cursor = connection.cursor()
-
-    # Prepare the SQL query
     sql = f"SELECT name FROM airport WHERE ident = '{icao}'"
     cursor.execute(sql)
 
-    # Fetch the result
     result = cursor.fetchone()
     cursor.close()
     connection.close()

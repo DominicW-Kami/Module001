@@ -15,7 +15,6 @@ def is_prime(n):
             return False
         i += 6
     return True
-
 @app.route('/alkuluku/<int:number>', methods=['GET'])
 def check_prime(number):
     is_prime_number = is_prime(number)
